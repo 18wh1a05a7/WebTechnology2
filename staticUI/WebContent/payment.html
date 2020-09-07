@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<script>function validateform(){  
+     var name=document.myform.name.value;  
+     var password=document.myform.password.value; 
+     var email = document.myform.email.value;
+  
+if (name==null || name==""){  
+  alert("Total Payment can't be blank");  
+  return false;  
+} 
+else if(password==null || password==""){
+	alert("Please enter Address");
+	return false;
+}
+
+
+else if(email == null || email ==""){
+	   alert("Credit Card Number Should not be Empty");
+	   return false;
+   }
+
+}  
+  </script>
+<body  >
+<h1> ONLINE BOOK STORE</h1>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<div class ="row">
+
+  <div class ="column" >
+   <table style="width:40%" style="height:100%"  >
+ 
+    
+    <tr>
+        <td><a class="active" href="home.html">HOME</a><br><br><br></td>
+        <td><a href="home.html"></a>
+    </tr>
+    <tr>
+        <td><a class="active" href="login.html">LOGIN</a><br><br><br></td>
+    </tr>
+    <tr>
+         <td><a class="active" href="register.html">REGISTER</a><br><br><br><br></td>
+
+    </tr>
+    <tr>
+        <td><a class="active" href="userprofile.html">USER PROFILE</a><br><br><br><br></td>
+
+    </tr>
+    <tr>
+        <td><a class="active" href="bookCatalogPage.html">BOOKCATALOG</a><br><br><br><br></td>
+
+    </tr>
+    <tr>
+       <td><a class="active" href="cart.html">CART</a><br><br><br></td>
+
+    </tr>
+    <tr>
+       <td><a class="active" href="payment.html">PAYMENT</a><br><br><br><br></td>
+
+    </tr>
+    <tr>
+      <td><a class="active" href="pay_con.html">PAYMENT_CONFIRMATION</a><br><br></td>
+
+    </tr>
+   
+   </table>
+    
+  </div>
+
+
+  <center><h1>Payment</h1></center>
+
+  <div class ="column" >
+   
+   <div class = "survey">
+   <form name="myform" method="post" action="pay_con.html" onsubmit="return validateform()" >  
+   <div ><p>Total Amount</p><input type="text" placeholder="Enter your username" name="name" class="border" ></div>
+   <p>CreditCard Number</p><input class = "border"  name="email" type="text" placeholder=" Enter CreditCard Number"><br><br><br>
+  
+   
+   <label for="birthday">Expiry Date</label><br><br>
+   <input type="date" id="birthday" name="birthday">
+  
+
+   <p><label><b>Address</b> </label></p>
+    <textarea cols="50" rows="5" placeholder="Current Address" name="password"  value="address" required>  
+       </textarea>  
+   
+   <br><br><center><input type="submit" value="OK"></a></center></p><br><br>
+  
+    
+   </div>
+  <br><br>
+  
+  
+</form>  
+
+
+
+
+
+  </div>
+
+</div>
+  
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
